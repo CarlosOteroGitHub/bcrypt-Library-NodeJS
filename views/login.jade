@@ -1,0 +1,16 @@
+html
+	head
+		title Jade
+	body
+		h3 Recepción de Parametros URL
+		form(action="/users" method="POST")
+			div(class="form-group")
+				label(for="email") Email*
+				input(type="email", name="email", placeholder="Ingrese el correo...", id="email", class="form-control")
+			br
+			div(class="form-group")
+				label(for="password") Contraseña*
+				input(type="password", name="password", placeholder="Ingrese la contraseña...", id="password", class="form-control")
+			br
+			div
+				input(type="submit", value="Iniciar Sesión", class="btn btn-success")
